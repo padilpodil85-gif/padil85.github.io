@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kopi Senja - Menikmati hangatnya kopi di kala senja</title>
+    <!-- Menambahkan Font Awesome untuk ikon WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
         /* Pengaturan Dasar */
         :root {
@@ -224,7 +227,7 @@
             display: block;
         }
 
-        /* Lokasi Section */
+        /* Lokasi Section & WhatsApp Button */
         #lokasi {
             padding: 80px 50px;
             max-width: 1200px;
@@ -244,6 +247,32 @@
             padding: 30px;
             border-radius: 15px;
             margin-top: 30px;
+        }
+
+        .btn-wa {
+            display: inline-block;
+            background-color: #25D366; /* Warna Hijau WhatsApp */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn-wa:hover {
+            background-color: #128C7E;
+            transform: scale(1.05);
+            color: white;
+        }
+
+        .btn-wa i {
+            margin-right: 8px;
+            font-size: 1.3rem;
+            vertical-align: middle;
         }
 
         /* Footer */
@@ -309,7 +338,7 @@
             <p><br>Menggunakan biji kopi Nusantara pilihan yang dipanggang dengan sempurna, barista kami siap menyeduhkan kehangatan untuk menemani waktu santai Anda setelah seharian beraktivitas.</p>
         </div>
         <div class="tentang-gambar">
-            <!-- Gambar dari sumber eksternal berkualitas (Diperbarui) -->
+            <!-- Gambar dari sumber eksternal berkualitas -->
             <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Suasana Kopi Senja">
         </div>
     </section>
@@ -354,7 +383,7 @@
                     <span class="harga">Rp 22.000</span>
                 </div>
             </div>
-            <!-- Item 5 (Tambahan) -->
+            <!-- Item 5 -->
             <div class="menu-item">
                 <img src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=500&q=80" alt="Matcha Latte">
                 <div class="menu-info">
@@ -363,7 +392,7 @@
                     <span class="harga">Rp 28.000</span>
                 </div>
             </div>
-            <!-- Item 6 (Tambahan) -->
+            <!-- Item 6 -->
             <div class="menu-item">
                 <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=500&q=80" alt="Roti Bakar">
                 <div class="menu-info">
@@ -382,7 +411,11 @@
         <div class="info-lokasi">
             <h3>📍 Kp Babakan No. 45, Kabupaten Tangerang</h3>
             <p>Buka Setiap Hari: 15.00 WIB - 22.00 WIB</p>
-            <p style="margin-top: 15px;">📞 WhatsApp: 0895-2673-7585</p>
+            
+            <!-- Tombol WhatsApp yang ditambahkan ikon dan link -->
+            <a href="https://wa.me/6289526737585" target="_blank" class="btn-wa">
+                <i class="fab fa-whatsapp"></i> WhatsApp: 0895-2673-7585
+            </a>
         </div>
     </section>
 
